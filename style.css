@@ -1,0 +1,530 @@
+@font-face
+{
+    font-family:'Raleway', Verdana, Arial, sans-serif;
+    src:local('fonts/Raleway-Regular.ttf')
+}  
+
+html
+{
+    font-size: 100%;
+}
+
+body
+{
+    font-family: 'Raleway', Verdana, sans-serif;
+    color: black;
+    font-size: 1rem;          
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body ul
+{
+    list-style-type: none;
+    display: flex;  
+}
+
+body a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h1
+{
+    font-size: 1.2rem;
+}
+
+h2
+{
+    font-size: 1.1rem;
+}
+
+h3
+{
+    font-size: 1rem;
+}
+
+/*  header */
+
+header                
+{
+    width: 100%;
+    height: auto; 
+}
+
+#logo                   
+{
+    width: 8rem; 
+    height: 3.3rem;       
+    position: absolute;
+    padding: 1rem 2rem;
+}
+
+.ha
+{
+    width: 20rem;
+    height: 3rem;
+    padding-left: 2rem;
+    display: flex; 
+    color: black;
+    margin-left: 1rem;
+}
+
+.ha a
+{
+    width: 10rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.ha a:hover                               
+{
+    border-top: 0.1rem solid #0065fc;   
+    color: #0065fc; 
+    padding-top: 2rem;
+}
+
+.ins
+{
+    width: 5rem; 
+    height: 2rem;
+    color: #0065fc;
+    font-weight: bold; 
+    margin: 2rem 3rem 0 1rem;
+}
+
+.ins a
+{
+    color: blue;
+}
+
+#has /* ok */
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ /* navbar */
+
+#choix             
+{
+    padding-top: 1rem;
+}
+
+.choixt
+{
+    padding-left: 2rem;
+}
+
+#boutonrecherche                       
+{                                                 
+    display: flex;
+    width: 26rem;   
+    margin-left: 2rem;
+    border: 0.1rem solid #f2f2f2;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+}
+
+.fa-map-marker-alt 
+{
+    height: 1.8rem;                    
+    font-size: 1.8rem; 
+    width: 2rem;
+    padding: 0.2rem 0 0 0.4rem;
+    background-color: #f2f2f2;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#ville
+{
+    height: 1rem;
+    width: 16rem;
+    padding: 0.4rem 0 0.4rem 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;  
+}
+
+.search button
+{
+    background-color: #0065fc;
+    font-size: 1rem;
+    color: white;
+    height: 2.1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.brico
+{
+    display: none;
+}
+
+/* filtres */
+
+.filtre
+{
+    margin: auto;
+    padding-right: 1rem; 
+    border-radius: 25rem; 
+    border: 0.1rem solid #deebff;                                                
+}   
+     
+.filtre button
+{
+    height: 2.5rem;                 
+    width: 2.5rem; 
+    color: #0065fc; 
+    background-color: #deebff;
+    border-radius: 50%;
+    border: 0.1rem solid #deebff;
+}
+
+.filtre a
+{
+    height: 3rem;
+    width: auto;
+    font-weight: bold;   
+}
+
+.filtre button:hover
+{
+    background-color: #0065fc;
+    color: white;
+}
+
+#filter 
+{
+    display: flex;
+    width: 48rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+#filtres
+{
+    width: auto;
+    margin-right: 2rem;
+    display: flex;
+
+}
+
+#filtres h2
+{
+    padding-top: 1rem;
+    margin-left: 2rem;
+}
+
+#infoville
+{
+    height: 3rem;
+    display: flex;
+    margin-bottom: 0.5rem;
+    vertical-align: middle; 
+}          
+
+.infot                   
+{
+    width: auto;                      
+    height: 3rem; 
+    margin: 1rem; 
+}
+
+#infoville button
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #0065fc;
+    background-color: white;
+    border-radius: 50%;
+    border: 0.1rem solid #deebff;
+    margin: 0 1rem 0 2rem;
+
+}
+
+/* conteneur locations */
+
+#locations
+{
+    width: auto;
+    display: flex;  
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+
+#populaires                 /* conteneur 1 */ 
+{
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: auto;
+    background-color: #f2f2f2; 
+    border-radius: 5%;
+    padding: 1rem 0 1rem 0;
+    position: relative;
+}
+
+
+.annoncepop
+{
+    width: auto;           
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-left: 1rem; 
+}
+
+#populaire
+{ 
+    width: auto;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-chart-line                                
+{
+    width: 2rem;                      
+    height: 2rem;
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+    vertical-align: baseline;
+}
+
+.hpop 
+{
+    border: 0.3rem solid white; 
+    border-radius: 1rem;                 
+    width: 16.037rem; 
+    height: 6.5rem;
+    background: white;
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.hpopi
+{
+    width: 7.5rem;
+    height: 6.5rem;
+    border-radius: 1rem 0rem 0rem 1rem;
+    object-fit: cover;
+}
+
+.popd 
+{
+    width: 7rem;
+    height: 6rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    line-height: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hpopt
+{
+    width: 7rem;
+    height: 4.5rem;
+}
+
+.etoiles
+{
+    width: 7rem;
+    height: 1rem;
+    display: flex;
+    padding-top: 0.3rem;
+}
+
+.etbleu
+{
+    width: auto;
+    height: 1rem;
+    color: #0065fc;
+}
+
+.etgris
+{
+    width: auto;
+    height: 1rem;
+    color: #f2f2f2;
+}
+
+#hebergements               /* conteneur 2 */
+{   
+    width: 39rem;
+    height: 33rem;
+    background-color: #f2f2f2;
+    border-radius: 3%;
+    position: relative;
+    padding: 0.5rem;
+}
+
+#hebm
+{
+    position: absolute;
+    top: 1rem; 
+    margin: 1.5rem 0 1.5rem 1rem;   
+}
+
+#heb
+{
+    width: 39rem;
+    height: 24rem;
+    margin-top: 4.5rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+
+.heba
+{
+    border: 0.3rem solid white;
+    margin: 0.5rem; 
+    border-radius: 1rem;
+    width: 11rem; 
+    height: 9.5rem;
+    background: white;
+}
+
+.hebi
+{
+    width: 11rem; 
+    height: 6rem; 
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+figcaption
+{
+    width: 10rem;
+    height: 1.5rem;
+    line-height: 0.9rem;
+    font-size: 0.7em; 
+    padding: 0.2rem 0 0 1rem;
+    text-align: left;
+}
+
+#ap
+{
+    position: absolute;
+    float: left;
+    bottom: 0.5rem;
+    margin: 1.5rem 0 2rem 1rem;
+}
+
+ /* conteneur 3 */
+
+#activites 
+{                
+    background-color: white; 
+    width: auto;
+    height: 29rem;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+#act
+{
+    display: flex;  
+    justify-content: space-around;
+    padding-top: 0.6em; 
+}
+#boutonrecherche                       
+    {                                                 
+        width: 19.8rem;
+        height: 2rem;
+    }
+#actm
+{
+    margin: 2rem 0 1.5rem 1rem;
+}
+
+.acte
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.acta, .actb, .actc
+{
+    border: 1px solid #f2f2f2;
+    border-radius: 8%; 
+    width: 13rem; 
+    box-shadow: 5px 5px 5px #f2f2f2;
+    margin: 0;
+}
+
+.acta
+{
+    height: 20rem;       
+}
+
+.actb
+{
+    height: 10rem; 
+}
+
+.actia, .actib, .actic
+{
+    width: 13rem; 
+    height: 17rem; 
+    border-radius: 9% 9% 0% 0%;   
+}
+
+.actib
+{
+    height: 7rem;
+    object-fit: cover;
+}
+
+.actc
+{ 
+    height: 8rem; 
+    object-fit: cover;
+}
+
+.actic
+{
+    height: 5rem; 
+    object-fit: cover;
+}
+
+/* footer conteneur 4 */
+
+footer ul                   
+{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 150%;
+}
+
+.various
+{
+    width: 20rem;
+    height: auto;
+    padding: 1rem;
+}
+
+footer
+{
+    background-color: #f2f2f2;
+    width: auto;
+    display: flex;
+    font-size: 100%;   
+    padding: 1rem;
+}
