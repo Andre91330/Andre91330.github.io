@@ -249,6 +249,13 @@ header
 
 /* conteneur locations */
 
+main
+{
+    width: 68.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #locations
 {
     width: auto;
